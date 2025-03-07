@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(255, 234, 214);
+}
+
+button {
+    padding:16vh;
+    max-height: 50%;
+    display: flexbox;
+    text-align: center;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:white;
+    margin: 5px;
+}
+
+.b1 {
+    border-top-left-radius: 20%;
+    border: none;
+}
+
+.b1:hover {
+    transition-duration: 0.5s;
+
+}
+   
+  .btn:hover .btn-slide-show-text1 {
+    margin-left: 65px;
+  } 
+   
+  .flash-slide {
+    border: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+ 
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+  } 
+   
+  .flash-slide::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    height: 400px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(20deg);
+  } 
+   
+  .flash-slide:hover::before {
+    left: 400px;
+    transition: 0.5s;
+  } 
+   
+  .flash-slide--red {
+    background: #fd8fa1;
+  } 
+  .flash-slide--blue {
+    background: #84e2df;
+  } 
+  .flash-slide--green {
+    background: #8df5ac;
+  } 
+  .flash-slide--yellow {
+    background: #f8d7a2;
+  } 
+
+.b2 {
+    background-color:#84e2df ;
+    border: none;
+
+}
+.b3 {
+    background-color:#8df5ac ;
+    border: none;
+
+}
+
+.b4 {
+    border-bottom-right-radius: 20%;
+    background-color: #f8d7a2;
+    border: none;
+
+}
+
+
+h1 {
+    color:rgb(0, 251, 255);
+    font-weight: bold;
+    text-shadow: rgb(11, 51, 78) 0.5px 0 5px;
+}
+
+ h3 {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+ }
+
+.header {
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2ch;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2ch;
+}
